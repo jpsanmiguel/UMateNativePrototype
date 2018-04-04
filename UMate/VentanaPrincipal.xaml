@@ -1,0 +1,48 @@
+﻿<Window x:Class="UMate.ventanaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UMate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Image Height="100" Margin="47,30,433,0"  VerticalAlignment="Top" Source="pack://application:,,,/Resources/Logo cuadrago.png"/>
+        <Label Content="UMate" HorizontalAlignment="Left" Margin="212,20,0,0" VerticalAlignment="Top" Height="80" Width="176" FontSize="50" FontFamily="Algerian Normal"/>
+
+
+        <Label Content="Selecciona tu carrera" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="244,95,228,0" Width="120"/>
+        <ComboBox  HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="200,121,0,0" SelectionChanged="Carrera">
+            <ComboBoxItem Content="Ingeniería de Sistemas y Computación" HorizontalAlignment="Left" Width="198" Selected="Sistemas"/>
+            <ComboBoxItem Content="Derecho" HorizontalAlignment="Left" Width="198" Selected="Derecho"/>
+        </ComboBox>
+
+        <Label Content="Selecciona tu semestre actual" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="216,148,204,0" Width="166"/>
+        <ComboBox  HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="200,174,0,0" SelectionChanged="Semestre">
+            <ComboBoxItem Content="Primero" HorizontalAlignment="Left" Width="198" Selected="Primero"/>
+            <ComboBoxItem Content="Segundo" HorizontalAlignment="Left" Width="198" Selected="Segundo"/>
+            <ComboBoxItem Content="Tercero" HorizontalAlignment="Left" Width="198" Selected="Tercero"/>
+            <ComboBoxItem Content="Cuarto" HorizontalAlignment="Left" Width="198" Selected="Cuarto"/>
+            <ComboBoxItem Content="Quinto" HorizontalAlignment="Left" Width="198" Selected="Quinto"/>
+            <ComboBoxItem Content="Sexto" HorizontalAlignment="Left" Width="198" Selected="Sexto"/>
+            <ComboBoxItem Content="Septimo" HorizontalAlignment="Left" Width="198" Selected="Septimo"/>
+            <ComboBoxItem Content="Octavo" HorizontalAlignment="Left" Width="198" Selected="Octavo"/>
+            <ComboBoxItem Content="Noveno" HorizontalAlignment="Left" Width="198" Selected="Noveno"/>
+            <ComboBoxItem Content="Decimo" HorizontalAlignment="Left" Width="198" Selected="Decimo"/>
+            <ComboBoxItem Content="Otro" HorizontalAlignment="Left" Width="198" Selected="Otro"/>
+        </ComboBox>
+
+        <Label Content="Selecciona tus prioridades este semestre" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="187,201,181,0" Width="224"/>
+        <CheckBox Content="Seguir pensum" HorizontalAlignment="Left" Margin="212,230,0,0" VerticalAlignment="Top" Checked="deseaSeguirPensum"/>
+        <CheckBox Content="Adelantar" HorizontalAlignment="Left" Margin="317,230,0,0" VerticalAlignment="Top" Checked="deseaAdelantar"/>
+        <CheckBox Content="Subir promedio" HorizontalAlignment="Left" Margin="212,250,0,0" VerticalAlignment="Top" Checked="deseaSubirPromedio"/>
+        <CheckBox Content="Nivelarse" HorizontalAlignment="Left" Margin="317,250,0,0" VerticalAlignment="Top" Checked="deseaNivelarse"/>
+        <CheckBox Content="Otro" HorizontalAlignment="Left" Margin="280,270,0,0" VerticalAlignment="Top" Checked="deseaOtro"/>
+        <Label Content="En caso de otro intentaremos comunicarnos contigo para poder incluir tu criterio en nuestro sistema :)" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,290,171,0" Width="244" Height="69"/>
+        <Label Content="    para poder incluir tu criterio en nuestro" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,300,171,0" Width="244" Height="59" />
+        <Label Content="                             sistema :)" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,310,171,0" Width="244" Height="59" />
+        <Button Content="Continuar a la recomendación" HorizontalAlignment="Center" VerticalAlignment="Top" Width="180" Margin="10,339,0,0" Click="continuar"/>
+        <Image Height="100" Margin="433,30,47,0"  VerticalAlignment="Top" Source="Resources/Logo cuadrago.png"/>
+
+    </Grid>
+</Window>
