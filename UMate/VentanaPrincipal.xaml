@@ -42,7 +42,6 @@
         <Label Content="    para poder incluir tu criterio en nuestro" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,300,171,0" Width="244" Height="59" />
         <Label Content="                             sistema :)" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,310,171,0" Width="244" Height="59" />
         <Button Content="Continuar a la recomendación" HorizontalAlignment="Center" VerticalAlignment="Top" Width="180" Margin="10,339,0,0" Click="continuar"/>
-        <Image Height="100" Margin="433,30,47,0"  VerticalAlignment="Top" Source="Resources/Logo cuadrago.png"/>
 
     </Grid>
 </Window>

@@ -8,6 +8,8 @@ namespace UMate
 {
     class Materia
     {
+        private string sLine;
+
         private String Nombre { get; }
 
         private double NotaHistorica { get; set; }
@@ -46,9 +48,15 @@ namespace UMate
             this.Horarios = horarios;
             this.Cursada = cursada;
         }
+        
+
+        public String darNombre()
+        {
+            return this.Nombre;
+        }
         /**
-         * Método que da un número de puntos según los criterios y datos de la materia para recomendarla.
-         * */
+* Método que da un número de puntos según los criterios y datos de la materia para recomendarla.
+* */
         public int EsSugeribleEstaMateria(List<Criterio> criteriosAMirar, int semestreActual)
         {
             //Si no cumple los prerequisitos no se puede recomendar la materia.

@@ -6,10 +6,28 @@
         xmlns:local="clr-namespace:UMate"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
-    <Grid>
-        <Image Height="100" Margin="60,30,632,0"  VerticalAlignment="Top" Source="pack://application:,,,/Resources/Logo cuadrago.png"/>
-        <Label Content="UMate" HorizontalAlignment="Center" Margin="10,20,0,0" VerticalAlignment="Top" Height="80" Width="176" FontSize="50" FontFamily="Algerian Normal"/>
-        <Image Height="100" Margin="632,30,60,0"  VerticalAlignment="Top" Source="Resources/Logo cuadrago.png"/>
+    <Grid HorizontalAlignment="Right" Width="792" Height="569" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="227*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="170*"/>
+            <ColumnDefinition Width="78*"/>
+            <ColumnDefinition Width="183*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbx1Copy" HorizontalAlignment="Left" Height="269" Margin="24,273,0,0" VerticalAlignment="Top" Width="178"/>
+        <GroupBox x:Name="gb2" Grid.Column="1" Header="Materias Recomendadas" HorizontalAlignment="Left" Height="353" Margin="61,142,0,0" VerticalAlignment="Top" Width="444" Grid.ColumnSpan="4"/>
+        <ListBox x:Name="lbx2" HorizontalAlignment="Left" Height="270" Margin="87,186,0,0" VerticalAlignment="Top" Width="390" Grid.ColumnSpan="4" Grid.Column="1"/>
+        <GroupBox x:Name="gb1" Header="Buscar Materias" HorizontalAlignment="Left" Height="403" Margin="11,156,0,0" VerticalAlignment="Top" Width="206"/>
+        <Image Height="100" Margin="60,30,67,0"  VerticalAlignment="Top" Source="pack://application:,,,/Resources/Logo cuadrago.png"/>
+        <Label Content="UMate" HorizontalAlignment="Center" Margin="87,20,41,0" VerticalAlignment="Top" Height="80" Width="176" FontSize="50" FontFamily="Algerian Normal" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="22" Margin="39,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="txt1_TextChanged"/>
+        <Button x:Name="btn1" Content="Buscar" HorizontalAlignment="Left" Margin="74,228,0,0" VerticalAlignment="Top" Width="74" Click="btn1_Click" RenderTransformOrigin="-0.101,0.525"/>
+        <ListBox x:Name="lbx1" HorizontalAlignment="Left" Height="270" Margin="24,272,0,0" VerticalAlignment="Top" Width="178" SelectionChanged="lbx1_SelectionChanged"/>
+        <Label Content="Materia" Grid.Column="1" HorizontalAlignment="Left" Margin="90,162,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="69"/>
+        <Label Content="Nota Historica" Grid.Column="2" HorizontalAlignment="Left" Margin="26,162,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Creditos" Grid.Column="2" HorizontalAlignment="Left" Margin="130,162,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="69"/>
+        <Label Content="Obligatoria" Grid.Column="3" HorizontalAlignment="Left" Margin="44,162,0,0" VerticalAlignment="Top" Width="69" Grid.ColumnSpan="2"/>
+        <DataGrid Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="193,248,-110,0" VerticalAlignment="Top" Width="100"/>
 
 
 
