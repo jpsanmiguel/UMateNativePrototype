@@ -34,7 +34,6 @@ namespace UMate
         private Boolean otro;
         private String otroRecomendado;
         private List<Materia> arrText;
-        //private ArrayList arr;
 
 
 
@@ -44,16 +43,14 @@ namespace UMate
             InitializeComponent();
 
             string path1 = @".\MateriasISIS.txt";
-            StreamReader objReader = new StreamReader(path1); //C: \Users\ASUS COLOMBIA\Desktop\Proyecto PMC\UMateNativePrototype\UMate\Resources\MateriasISIS.txt
+            StreamReader objReader = new StreamReader(path1); 
             string sLine = "";
             arrText = new List<Materia>();
-            //arr = new ArrayList();
 
             while (sLine != null)
             {
                 sLine = objReader.ReadLine();
                 if (sLine != null) {
-                    //arr.Add(sLine);
                     Materia materia = new Materia(sLine,2.5,3,true,3,4,2,null,null,null,false);
                     arrText.Add(materia);
                     this.lbx1.Items.Add(sLine);
@@ -62,8 +59,6 @@ namespace UMate
             }
             objReader.Close();
 
-            //foreach (string sOutput in arrText)
-            //    Console.WriteLine(sOutput);
             Console.ReadLine();
         }
 
@@ -71,10 +66,12 @@ namespace UMate
         {
             if (txt1.Text == null || txt1.Text == "" || txt1.Text.Equals("") || txt1.Text.Equals(null))
             {
-                //lbx1.Items.Clear();
-                lbx1.Items.Refresh();
-                lbx1.;
-                //lbx1.(lbx1Copy.Items);
+                lbx1.Items.Clear();
+                for (int i = 0; i < arrText.Count; i++)
+                {
+                    lbx1.Items.Add(arrText[i].darNombre());
+                    lbx1.Items.Refresh();
+                }
             }
             else
             {
@@ -92,9 +89,11 @@ namespace UMate
         {
             if (txt1.Text == null || txt1.Text == "" || txt1.Text.Equals("") || txt1.Text.Equals(null))
             {
-                //lbx1.Items.Clear();
-                lbx1.Items.Refresh();
-                //lbx1.Items.Add(lbx1Copy.Items);
+                lbx1.Items.Clear();
+                for (int i = 0; i < arrText.Count; i++)
+                {
+                        lbx1.Items.Add(arrText[i].darNombre());
+                }
             }
             else
             {

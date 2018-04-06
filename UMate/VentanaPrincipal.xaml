@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="401*"/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
         <Image Height="100" Margin="47,30,433,0"  VerticalAlignment="Top" Source="pack://application:,,,/Resources/Logo cuadrago.png"/>
         <Label Content="UMate" HorizontalAlignment="Left" Margin="212,20,0,0" VerticalAlignment="Top" Height="80" Width="176" FontSize="50" FontFamily="Algerian Normal"/>
 
@@ -17,7 +21,7 @@
             <ComboBoxItem Content="Derecho" HorizontalAlignment="Left" Width="198" Selected="Derecho"/>
         </ComboBox>
 
-        <Label Content="Selecciona tu semestre actual" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="216,148,204,0" Width="166"/>
+        <Label Content="Selecciona tu semestre actual" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="219,148,207,0" Width="166"/>
         <ComboBox  HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="200,174,0,0" SelectionChanged="Semestre">
             <ComboBoxItem Content="Primero" HorizontalAlignment="Left" Width="198" Selected="Primero"/>
             <ComboBoxItem Content="Segundo" HorizontalAlignment="Left" Width="198" Selected="Segundo"/>
@@ -41,7 +45,7 @@
         <Label Content="En caso de otro intentaremos comunicarnos contigo para poder incluir tu criterio en nuestro sistema :)" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,290,171,0" Width="244" Height="69"/>
         <Label Content="    para poder incluir tu criterio en nuestro" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,300,171,0" Width="244" Height="59" />
         <Label Content="                             sistema :)" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="177,310,171,0" Width="244" Height="59" />
-        <Button Content="Continuar a la recomendación" HorizontalAlignment="Center" VerticalAlignment="Top" Width="180" Margin="10,339,0,0" Click="continuar"/>
+        <Button Content="Continuar a la recomendación" HorizontalAlignment="Center" VerticalAlignment="Top" Width="180" Margin="211,339,201,0" Click="continuar"/>
 
     </Grid>
 </Window>

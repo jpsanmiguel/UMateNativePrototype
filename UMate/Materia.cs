@@ -8,8 +8,6 @@ namespace UMate
 {
     class Materia
     {
-        private string sLine;
-
         private String Nombre { get; }
 
         private double NotaHistorica { get; set; }
